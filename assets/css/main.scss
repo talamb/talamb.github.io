@@ -4,22 +4,65 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
+    width: 100%;
+}
+
+header {
+  width: inherit;
 }
 
 footer {
-  height: 150px;
-  left: 0;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: inherit;
   background-color: $primary;
 }
 
+.navDiv {
+  height: 24px;
+  width: 1px;
+  margin-top: 9px;
+  background-color: black;
+}
+
+.Proj {
+  height: 11em;
+  width: 8em;
+  padding: 1em;
+  margin: .25em;
+  background-color: $primary;
+  border-radius: 15px;
+}
+
+.Proj-img {
+
+}
+
+.Proj-title {
+
+}
+
+.Proj-blurb {
+
+}
+
+.Proj-link {
+
+}
+
 .skill {
+
+  position: relative;
   padding: 50px;
   min-width: 50px;
   max-height: 50px;
@@ -27,6 +70,24 @@ footer {
   align-items: center;
   justify-content: center;
 
+}
+
+#navMenu {
+}
+
+#langList {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+#skillList {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  overflow:auto;
+  float:left;
+  width:inherit;
 }
 
 #InputPhone {
@@ -39,7 +100,8 @@ footer {
 
 #mainWrapper {
   min-height: 100%;
-  padding: 0;
-  margin: 0;
+  width: inherit;
+  padding: 0px;
+  margin: 0px;
   position: relative;
 }

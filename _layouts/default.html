@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<!-- add sass-->
 	<head>
@@ -7,15 +8,15 @@
 	</head>
 
 
-	<body>
+	<body style="width:inherit;">
 		<div id="mainWrapper">
-		{% include header.html %}
+			{% include header.html %}
 
-		{{ content }}
+			{{ content }}
 
-		{%include footer.html %}
+			{%include footer.html %}
 
-		{% include reqBootScripts.html %}
+			{% include reqBootScripts.html %}
 		</div>
 	</body>
 
